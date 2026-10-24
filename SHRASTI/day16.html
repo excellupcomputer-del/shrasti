@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 300px;
+
+    }
+</style>
+
+<body>
+    <div>
+        <form id="form">
+            <label for="">Name</label>
+            <input type="text" name="Username" id="Username" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="enter email address">
+            <select name="" id="course">
+                <option value="">choose course</option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="Javascript">Javascript</option>
+            </select>
+
+            <input type="passward" name="pass" id="pass" placeholder="enter your passward">
+            <input type="submit" name="" id="submit">
+
+        </form>
+        <p id="message"></p>
+        <p id="output">Name: | Email: | Course:| Pass: |</p>
+
+    </div>
+
+    <script>
+        let nameinput = document.getElementById("Username")
+        let submit = document.getElementById("submit")
+        let message = document.getElementById("message")
+        let output = document.getElementById("output")
+        let email = document.getElementById("email")
+        let course = document.getElementById("course")
+        let pass = document.getElementById("pass")
+
+        submit.addEventListener("click", (even) => {
+            event.preventDefault()
+            console.log(nameinput.value)
+            if (nameinput.value.trim() === "") {
+                message.innerText = "name is invalid"
+                return;
+            }
+            if (email.value.trim() === "") {
+                message.innerText = "email is invalid"
+                return;
+            }
+
+           if (course.value.trim() === "") {
+                message.innerText = "course is invalid"
+                return;
+            }
+
+            if (pass.value.trim() === "") {
+                message.innerText = "passward is invalid"
+                return;
+            }
+            else {
+                message.innerText = "submit success!"
+                output.innerText = "Name:" + "Email:" + "Course:" + "Pass:" + nameinput.value
+            }
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

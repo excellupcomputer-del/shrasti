@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="head">hello</h1>
+
+    <p class="head">goodbye</p>
+
+    <button class="button">press it</button>
+    <script>
+        // let number = [10, 5, 25, 8, 20];
+
+        // let largest = number[0];
+        // let secondlargest = number[0];
+
+        // for (let i = 1; i< number.length; i++){
+        //     if(number[i]>largest){
+        //         secondlargest = largest;
+        //         largest = number[i];
+        //     }
+        //     else if (number[i] > secondlargest && number[i] !=largest) {
+        //         secondlargest = number[i];
+
+        //     }
+        // }
+
+        //  console.log("second largest number;" , secondlargest);
+
+
+
+
+
+        console.log(document.querySelector("#head"));
+        console.log(document.querySelector(".head"));
+        // console.log(document.querySelectorAll(".button"));
+        
+        let headtext = document.querySelector(".button")
+        console.log(headtext);
+        
+        headtext.innerHTML = " <h1>hello</h1>"
+
+
+
+    </script>
+</body>
+
+</html>

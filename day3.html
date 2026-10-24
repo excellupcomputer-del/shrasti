@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(123, 218, 221);
+    }
+
+    div {
+        width: 200px;
+        width: 200px;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-name: box;
+        position: relative;
+
+    }
+
+    img {
+        border-radius: 150px;
+    }
+
+    @keyframes box {
+        0% {
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+
+        25% {
+            top: 10px;
+            left: 1230px;
+            position: absolute;
+        }
+
+        50% {
+            top: 530px;
+            left: 0px;
+            position: absolute;
+            transform: rotatey(180deg);
+        }
+
+        75% {
+            top: 530px;
+            left: 1230px;
+            position: absolute;
+        }
+
+        100% {
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+    }
+</style>
+
+<body>
+
+    <div>
+        <img src="https://www.reactiongifs.com/wp-content/uploads/2013/07/running.gif" height="200px" width="200px"
+            alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

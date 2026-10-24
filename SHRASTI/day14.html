@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .highlight{
+        background-color: black;
+        color: aliceblue;
+    }
+   
+</style>
+
+<body id="body">
+    <div>
+        <h1 id="head">welcome to exclleup</h1>
+        <p id="para" >nice to meet you</p>
+        <button onclick="changecolor()" id="btn" >change to dark colour</button>
+    </div>
+    <script>
+        let headtext = document.querySelector("#head");
+       let paratext = document.querySelector("#para");
+       let btnntext = document.querySelector("#btn");
+       let color = document.querySelector("#body");
+       
+       console.log(head);
+       console.log(para);
+       console.log(btnntext);
+
+       
+        
+         
+
+       function changecolor() {
+           
+          color.classList.toggle("highlight")
+          if (btnntext.innerText ==="change to dark colour") {
+             btnntext.innerText = "change to light colour"
+          } else {
+             btnntext.innerText = "change to dark colour"
+          }
+         
+        
+       }
+       
+       
+       
+
+    </script>
+</body>
+</html>

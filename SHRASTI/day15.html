@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="head">Input form:</h1>
+        <form>
+            <label for="">Username</label>
+            <input oninput="" id="Username" type="text" placeholder="">
+            <button onchange="" id="btn" >submit</button>
+        </form>
+
+        <ul id="fruit"></ul>
+    </div>
+    <script>
+        let headText = document.querySelector("#head")
+        let UserNameInput = document.querySelector("#Username")
+        let updateBtn = document.querySelector("#btn")
+        let fruitlist = document.querySelector("#fruit")
+
+        function checkinputvalue() {
+            console.log(UserNameInput.value);
+            console.log(UserNameInput.value);
+            headText.innerText = UserNameInput.value
+            
+            
+            
+            
+        }
+
+        let cart = ["kiwi" , "grapes" , "mango"];
+        function addlist() {
+            fruitlist.innerHTML = "";
+            cart.push(UserNameInput.value);
+
+            cart.forEach((value)=>{
+                let li = document.createElement("li");
+                li.innerText = value;
+                fruitlist.appendChild(li);
+            });
+            
+        }
+    </script>
+    
+</body>
+</html>

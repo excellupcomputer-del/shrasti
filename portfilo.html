@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caacupe+One&family=Gabriela&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    /* home page */
+    .first {
+        background-image: linear-gradient(rgb(28, 82, 93), rgb(236, 160, 199));
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 750px;
+        width: 1420px;
+        position: relative;
+    }
+
+    .Portfolio {
+        color: white;
+        font-size: 35px;
+        margin-top: 10px;
+        font-family: "Betania Patmos", cursive;
+    }
+
+    a {
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    li {
+        list-style-type: none;
+        /* padding-left: 70px; */
+        font-family: "Betania Patmos", cursive;
+    }
+
+    ol {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+        padding-left: 680px;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        /* padding-top: 50px; */
+        position: fixed;
+    }
+
+    .div1 {
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+        position: sticky;
+    }
+
+    .second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 250px;
+        padding-top: 130px;
+        gap: 40px;
+    }
+
+    .hey {
+        color: rgb(204, 133, 171);
+        font-size: 60px;
+        font-family: "Betania Patmos", cursive;
+    }
+
+    p {
+        color: rgb(6, 52, 62);
+        font-size: 21px;
+        font-family: "Gabriela", serif;
+        /* text-align: justify; */
+        padding-right: 130px;
+    }
+
+    /* skills page */
+    .third {
+        background-image: linear-gradient(rgb(236, 160, 199));
+        height: 800px;
+        width: 1420px;
+        padding-top: 40px;
+        /* margin-top: 100px; */
+    }
+
+    .skills {
+        font-size: 80px;
+        text-align: center;
+        color: rgb(9, 63, 77);
+        font-family: "Betania Patmos", cursive;
+        text-shadow: 5px 5px 10px rgb(3, 63, 80);
+
+
+    }
+
+    .part1 {
+        display: flex;
+        justify-content: center;
+        gap: 140px;
+        padding-top: 60px;
+
+
+    }
+
+    .part2 {
+        display: flex;
+        justify-content: center;
+        gap: 140px;
+        padding-top: 40px;
+    }
+
+    .part3 {
+        display: flex;
+        justify-content: center;
+        gap: 140px;
+        padding-top: 40px;
+    }
+
+    .div3 {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 30px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+    }
+
+    .div3:hover {
+        transform: scale(1.2);
+    }
+
+    h4 {
+        color: rgb(3, 50, 62);
+        font-size: 19px;
+        padding: 5px;
+    }
+
+    h1 {
+        color: rgb(4, 75, 93);
+        padding: 5px;
+    }
+
+    .div4 {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 40px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+    }
+
+    .div4:hover {
+        transform: scale(1.2);
+    }
+
+    .div5 {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 99px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+    }
+
+    .div5:hover {
+        transform: scale(1.2);
+    }
+
+    .div6 {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 130px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+
+    }
+
+    .div6:hover {
+        transform: scale(1.2);
+    }
+
+    .div7 {
+        display: flex;
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 90px;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+    }
+
+    .div7:hover {
+        transform: scale(1.2);
+    }
+
+    .div8 {
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgb(3, 63, 80);
+        background-color: rgb(177, 218, 242);
+        /* border: 1px solid white; */
+        width: 340px;
+        height: 140px;
+        gap: 50px;
+    }
+
+    .div8:hover {
+        transform: scale(1.2);
+    }
+
+    /* projects */
+    .fourth {
+
+        background-image: linear-gradient(rgb(236, 160, 199));
+        height: 800px;
+        width: 1420px;
+        /* padding: 90px; */
+        padding-top: 110px;
+
+    }
+
+    .boxproject {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        padding-top: 120px;
+
+    }
+
+    .project {
+        font-size: 80px;
+        text-align: center;
+        color: rgb(9, 63, 77);
+        font-family: "Betania Patmos", cursive;
+        text-shadow: 5px 5px 10px rgb(3, 63, 80);
+
+
+
+    }
+
+    .div9 {
+        /* border: 2px solid white; */
+        height: 260px;
+        width: 350px;
+        border-radius: 30px;
+        background-color: rgb(111, 184, 211);
+        box-shadow: 5px 10px 30px rgb(3, 63, 80)
+    }
+
+    .div9:hover {
+        transform: scale(1.1);
+    }
+
+    .div10 {
+        /* border: 1px solid white; */
+        width: 350px;
+        height: 260px;
+        border-radius: 30px;
+        background-color: rgb(111, 184, 211);
+        box-shadow: 5px 10px 30px rgb(3, 63, 80)
+    }
+
+    .div10:hover {
+        transform: scale(1.1);
+    }
+
+    .div9 img {
+        border-radius: 30px;
+    }
+
+    .div10 img {
+        border-radius: 30px;
+    }
+
+    .word {
+        text-align: center;
+        font-size: 25px;
+        font-family: cursive;
+    }
+
+    /* contact */
+    .fifth {
+
+        background-image: linear-gradient(rgb(236, 160, 199), rgb(28, 82, 93));
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 1420px;
+    }
+
+    .input1 {
+        height: 45px;
+        width: 750px;
+        border-radius: 20px;
+        background-color: rgb(205, 227, 243);
+        margin-left: 350px;
+        margin-top: 120px;
+        box-shadow: 5px 5px 5px rgb(205, 227, 243);
+        border: none;
+    }
+
+    .in2 {
+        height: 45px;
+        width: 370px;
+        border-radius: 20px;
+        background-color: rgb(205, 227, 243);
+        margin-top: 40px;
+        box-shadow: 5px 5px 5px rgb(205, 227, 243);
+        border: none;
+    }
+
+    .in3 {
+        height: 45px;
+        width: 370px;
+        border-radius: 20px;
+        background-color: rgb(205, 227, 243);
+        margin-top: 40px;
+        box-shadow: 5px 5px 5px rgb(205, 227, 243);
+        border: none;
+    }
+
+    .in4 {
+        height: 45px;
+        width: 750px;
+        border-radius: 20px;
+        background-color: rgb(239, 224, 230);
+        margin-left: 350px;
+        margin-top: 40px;
+        box-shadow: 5px 5px 5px rgb(205, 227, 243);
+        border: none;
+    }
+
+    .in5 {
+        height: 75px;
+        border: none;
+        width: 750px;
+        border-radius: 20px;
+        background-color: rgb(247, 231, 237);
+        margin-left: 350px;
+        margin-top: 50px;
+        box-shadow: 5px 5px 5px rgb(205, 227, 243);
+    }
+
+    .div11 {
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+        gap: 10px;
+    }
+
+    .contact {
+        font-size: 85px;
+        font-weight: bolder;
+        text-shadow: 5px 5px 20px rgb(28, 82, 93);
+        text-align: center;
+        font-family: "Betania Patmos", cursive;
+
+    }
+
+    /* From Uiverse.io by JkHuger */
+    .rainbow-hover {
+        font-size: 18px;
+        font-weight: 700;
+        color: #f4a3dd;
+        background-color: #053553;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 26px;
+        position: relative;
+        line-height: 24px;
+        border-radius: 9px;
+        box-shadow: 0px 1px 2px #1b4660,
+            0px 4px 16px #122b39;
+        transform-style: preserve-3d;
+        transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+        perspective: 600px;
+        transition: transform 0.1s;
+        margin-left: 680px;
+        margin-top: 20px;
+
+
+
+
+    }
+
+    .sp {
+        background: linear-gradient(90deg,
+                #866ee7,
+                #ea60da,
+                #ed8f57,
+                #fbd41d,
+                #2cca91);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        display: block;
+    }
+
+    .rainbow-hover:active {
+        transition: 0.3s;
+        transform: scale(0.93);
+    }
+
+    /* media start */
+    @media screen and (max-width:600px) {
+        .first {
+            background-image: linear-gradient(rgb(28, 82, 93), rgb(236, 160, 199));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 750px;
+            width: 1420px;
+            position: relative;
+        }
+
+        .Portfolio {
+            color: white;
+            font-size: 20px;
+
+            margin-top: 10px;
+            font-family: "Betania Patmos", cursive;
+        }
+
+        a {
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+
+            font-weight: bold;
+        }
+
+        ol {
+            display: flex;
+            justify-content: end;
+            gap: 30px;
+            padding-left: 480px;
+            /* margin-top: 10px; */
+
+        }
+
+        nav {
+            display: contents;
+            align-items: center;
+            justify-content: center;
+            gap: none;
+            position: ;
+        }
+
+        .div1 {
+            /* display: flex; */
+            gap: 20px;
+            padding-right: 20px;
+            position: sticky;
+        }
+
+        .second {
+            /* display: flex; */
+            /* justify-conte..0nt: center; */
+            align-items: center;
+            padding-left: 250px;
+            padding-top: 130px;
+            gap: 40px;
+        }
+
+        .hey {
+            color: rgb(116, 15, 69);
+            font-size: 60px;
+            font-family: "Betania Patmos", cursive;
+        }
+
+        p {
+            color: rgb(6, 52, 62);
+            font-size: 21px;
+            font-family: "Gabriela", serif;
+            /* text-align: justify; */
+            padding-right: 130px;
+        }
+
+        .single {
+            padding-right: 10px;
+            align-items: center;
+        }
+
+        .single:hover{
+            transform: scale(1.1);
+        }
+
+        /* skills */
+
+        .third {
+            background-image: linear-gradient(rgb(236, 160, 199));
+            height: 800px;
+            width: 1420px;
+            padding-top: 40px;
+            /* margin-top: 100px; */
+        }
+
+        .skills {
+            font-size: 80px;
+            text-align: center;
+            color: rgb(9, 63, 77);
+            font-family: "Betania Patmos", cursive;
+            text-shadow: 5px 5px 10px rgb(3, 63, 80);
+
+
+        }
+
+        .part1 {
+            display: flex;
+            justify-content: center;
+            gap: 140px;
+            padding-top: 60px;
+
+
+        }
+
+        .part2 {
+            /* display: flex; */
+            /* justify-content: center; */
+            /* gap: 140px; */
+            padding-top: 40px;
+        }
+
+        .part3 {
+            /* display: flex; */
+            /* justify-content: center; */
+            /* gap: 140px; */
+            padding-top: 40px;
+        }
+
+        .div3 {
+            display: flex;
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+        }
+
+        .div3:hover {
+            transform: scale(1.2);
+        }
+
+        h4 {
+            color: rgb(3, 50, 62);
+            font-size: 19px;
+            padding: 5px;
+        }
+
+        h1 {
+            color: rgb(4, 75, 93);
+            padding: 5px;
+        }
+
+        .div4 {
+            display: flex;
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 40px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+        }
+
+        .div4:hover {
+            transform: scale(1.2);
+        }
+
+        .div5 {
+            display: flex;
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 99px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+        }
+
+        .div5:hover {
+            transform: scale(1.2);
+        }
+
+        .div6 {
+            display: flex;
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 130px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+
+        }
+
+        .div6:hover {
+            transform: scale(1.2);
+        }
+
+        .div7 {
+            display: flex;
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 90px;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+        }
+
+        .div7:hover {
+            transform: scale(1.2);
+        }
+
+        .div8 {
+            display: flex;
+            border-radius: 20px;
+            box-shadow: 5px 10px 30px rgb(3, 63, 80);
+            background-color: rgb(177, 218, 242);
+            /* border: 1px solid white; */
+            width: 340px;
+            height: 140px;
+            gap: 50px;
+        }
+
+        .div8:hover {
+            transform: scale(1.2);
+        }
+
+
+
+    }
+</style>
+
+<body>
+    <!-- home page -->
+    <section id="Home" class="first">
+        <nav>
+            <div class="div1">
+                <img src="/slehal-removebg-preview.png" height="80px" width="110px" alt="">
+                <h1 class="Portfolio"> <a href="#home">Portfolio</a> </h1>
+            </div>
+            <ol>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contect</a></li>
+            </ol>
+        </nav>
+        <section class="second">
+            <div class="div2">
+                <img class="single"
+                    src="https://www.pngplay.com/wp-content/uploads/12/Anime-Girl-Pfp-PNG-HD-Quality.png" height="330px"
+                    width="340px" alt="" style="border-radius: 30px;">
+
+            </div>
+
+            <div class="div2">
+                <h1 class="hey">Hey,<br> I'm Shrasti Thakur</h1>
+                <p>I am currently pursing a bachelor of computer applictions. I am passionate about learning new
+                    technologies and improving my computer skills. I consider myself a hardworking, responsible, and
+                    positive person who always tries to learn from new experiences.</p>
+            </div>
+        </section>
+    </section>
+    <!-- skillsm page -->
+
+    <section id="skills" class="third">
+        <h2 class="skills">Skills</h2>
+
+        <div class="part1">
+
+            <div class="div3">
+                <div>
+                    <img src="https://www.vavlab.com/images/technology/HTML5.png" height="120px" width="120px" alt="">
+                </div>
+                <div>
+                    <h1>HTML</h1>
+                    <h4>Hypertext markup language.</h4>
+                </div>
+            </div>
+
+            <div class="div4">
+                <div><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" height="130px"
+                        width="130px" alt=""></div>
+                <div>
+                    <h1>CSS</h1>
+                    <h4>Casedaing Styling Sheet</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="part2">
+            <div class="div5">
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rLskLyALZm7Sjqf5o2Rhff4Fom8Ro4kFl60rYk5NQkTAnTGb5vbAaE0&s=10"
+                        height="130px" width="130px" alt="" style="border-radius: 100px;"></div>
+                <div>
+                    <h1>JS</h1>
+                    <h4>javascript</h4>
+                </div>
+            </div>
+
+
+
+            <div class="div6">
+                <div>
+                    <h1>R</h1>
+                    <h4>React</h4>
+                </div>
+                <div><img src="https://juststickers.in/wp-content/uploads/2016/05/reactjs-badge.png" height="130px"
+                        width="130px" alt=""></div>
+
+            </div>
+        </div>
+
+        <div class="part3">
+
+            <div class="div7">
+                <div>
+                    <h1>Tally</h1>
+                    <h4>Tallyprime</h4>
+                </div>
+                <div>
+                    <img src="https://skillanything.com/wp-content/uploads/2024/01/Learn-about-Tally-Prime.png"
+                        height="130px" width="130px" style="border-radius: 80px; alt=">
+                </div>
+
+            </div>
+
+            <div class="div8">
+                <div>
+                    <h1>MS Office</h1>
+                    <h4>Microsoft office</h4>
+                </div>
+                <div><img
+                        src="https://icons.iconarchive.com/icons/blackvariant/button-ui-ms-office-2016/512/Word-2-icon.png"
+                        height="130px" width="130px" alt=""></div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- projects -->
+
+    <section id="project" class="fourth">
+
+        <h1 class="project">Projects</h1>
+        <div class="boxproject">
+
+            <div class="div9">
+                <img src="https://www.w3schools.com/w3images/hamburger.jpg" height="200px" width="350px" alt="">
+                <h4 class="word">Project 1</h4>
+
+            </div>
+            <div class="div10">
+                <img src="https://st2.depositphotos.com/1105977/9877/i/450/depositphotos_98775856-stock-photo-retro-film-production-accessories-still.jpg"
+                    height="200px" width="350px" alt="">
+                <h4 class="word">project 2</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="fifth">
+
+        <h2 class="contact">Contact </h2>
+
+        <input class="input1" type="text" placeholder="Enter your name">
+
+        <div class="div11">
+
+            <input class="in2" type="number" placeholder="Enter your number">
+
+            <input class="in3" type="datetime" placeholder="Enter your DOB">
+        </div>
+
+        <input class="in4" type="email" placeholder="Enter your email address">
+
+        <input class="in5" type="text" placeholder="Enter your address">
+
+        <br>
+        <br>
+
+
+
+
+        <button data-label="Register" class="rainbow-hover" onclick="hii()">
+            <span class="sp">Register</span>
+        </button>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/day1.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

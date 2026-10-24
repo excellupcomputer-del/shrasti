@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: rgb(193, 77, 119);
+
+    }
+
+    #list {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    h1 {
+        font-size: 100px;
+        /* font-weight: 100px; */
+        /* align-items: center;
+        display: flex;
+        justify-content: center; */
+    }
+
+    #task {
+        height: 50px;
+        width: 200px;
+        border: 2px dotted black;
+        border-radius: 10px;
+    }
+
+    #btn {
+        height: 50px;
+        width: 100px;
+        border: 2px dotted black;
+        border-radius: 10px;
+    }
+
+    #delete {
+        height: 50px;
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .div {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* flex-direction: column; */
+    }
+</style>
+
+<body>
+    <h1>To Do List:</h1>
+
+    <div class="div">
+        <input type="text" id="task" onkeypress="todolist(e)" placeholder="Enter your task">
+
+
+
+    </div>
+
+    <ul id="list"></ul>
+
+</body>
+<script>
+
+    let taskText = document.querySelector("#task")
+    let addText = document.querySelector("#btn")
+    let list = document.querySelector("#list")
+    let task = [];
+
+    taskText.addEventListener("keypress", function (e) {
+        if (e.key != "Enter") {
+            return;
+        }
+
+        list.innerHTML = ""
+
+        task.push(taskText.value)
+
+
+        task.forEach((item) => {
+            let li = document.createElement("li");
+
+            li.innerText = item;
+
+            list.appendChild(li);
+
+            taskText.value = ""
+
+        });
+
+    })
+
+
+
+
+
+
+</script>
+
+</html>

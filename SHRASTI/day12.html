@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        // let array = [12, 45, 7, 89, 34]
+
+        // console.log(array);
+
+        // let count = 0
+        // while(count <= 10){
+        //     console.log(count);
+        //     sum = sum + count;   
+        //     count++;
+            
+        // }
+
+
+
+        // do{
+        //     console.log(count);
+        //     count++
+            
+        // }while(count <=10)
+
+
+
+
+        let number = [10, 5, 25, 8, 20];
+       
+        let largert = number[0];
+        let secondlargest = number[0];
+
+        for (let i = 1; i< number.length; i++){
+            if(number[i]>largest){
+                secondlargest = largest;
+                largest = number[i];
+            }
+            else if (number[i] > seconflargest && number[i] !=largest) {
+                secondlargest = number[i];
+                
+            }
+        }
+
+         console.log("second largest number;" , secondlargest);
+         
+    </script>
+    
+</body>
+</html>
